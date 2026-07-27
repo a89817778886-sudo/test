@@ -3121,6 +3121,12 @@ _TAB_NAMES = [
     ("👥 Клиенты", "CRM: Клиенты"),
     ("📄 КП", "CRM: КП"),
     ("📑 Договоры", "CRM: Договоры"),
+    ("📊 SEO Dashboard", "SEO: Dashboard"),
+    ("📬 SEO Leads", "SEO: Leads"),
+    ("🎯 SEO Projects", "SEO: Projects"),
+    ("📋 SEO Tasks", "SEO: Tasks"),
+    ("📈 SEO Reports", "SEO: Reports"),
+    ("🔌 SEO Integrations", "SEO: Integrations"),
     ("⏰ Задачи", "CRM: Напоминания"),
     ("💰 Продажи", "CRM: Продажи"),
     ("📎 Внешний договор", "Внешний договор"),
@@ -3270,6 +3276,24 @@ if app_section != "Расчёт КП":
         elif app_section == "CRM: Договоры":
             import contracts_ui as _contracts_ui
             _contracts_ui.render_contracts_tab()
+        elif app_section == "SEO: Dashboard":
+            import seo_ui as _seo_ui
+            _seo_ui.render_seo_dashboard_tab()
+        elif app_section == "SEO: Leads":
+            import seo_ui as _seo_ui
+            _seo_ui.render_seo_leads_tab()
+        elif app_section == "SEO: Projects":
+            import seo_ui as _seo_ui
+            _seo_ui.render_seo_projects_tab()
+        elif app_section == "SEO: Tasks":
+            import seo_ui as _seo_ui
+            _seo_ui.render_seo_tasks_tab()
+        elif app_section == "SEO: Reports":
+            import seo_ui as _seo_ui
+            _seo_ui.render_seo_reports_tab()
+        elif app_section == "SEO: Integrations":
+            import seo_ui as _seo_ui
+            _seo_ui.render_seo_integrations_tab()
         elif app_section == "CRM: Напоминания":
             _crm_ui.render_reminders_tab()
         elif app_section == "CRM: Продажи":
