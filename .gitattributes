@@ -1,0 +1,11 @@
+* text=auto
+
+# Явно бинарные файлы — не трогать переводом строк
+*.ttf binary
+*.otf binary
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.xlsx binary
+*.docx binary
+*.pdf binary
