@@ -23,7 +23,7 @@ DB_PATH = Path(__file__).parent / "crm.db"
 def _get_conn():
     """Возвращает соединение к БД (SQLite локально или PostgreSQL если задан SUPABASE_DB_URL)."""
     try:
-        from crm_db import _get_conn as _get_shared_conn
+        from crm_db import get_conn as _get_shared_conn
         return _get_shared_conn()
     except Exception:
         c = sqlite3.connect(str(DB_PATH))
